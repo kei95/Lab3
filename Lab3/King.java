@@ -8,7 +8,7 @@ public class King extends ChessPiece {
 
     @Override
     public String toString() {
-        return move();
+        return "King: value " + super.getValue();
     }
 
     @Override

@@ -9,7 +9,7 @@ public class Driver {
         Knight knight = new Knight(2);
         Pawn pawn = new Pawn(1);
 
-        System.out.println(pawn.move());
+        System.out.println(pawn);
         System.out.println(king.move());
 
         pawn.promote(rook);

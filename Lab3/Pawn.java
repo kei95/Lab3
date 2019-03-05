@@ -15,6 +15,8 @@ public class Pawn extends ChessPiece {
         if(!this.equals(newPiece) && newPiece.getValue() != 1000 && this.hasBeenPromoted == false ){
             this.setHasBeenPromoted(true);
             this.setValue(newPiece.getValue());
+            this.newPiece = newPiece;
+            System.out.println("Promoted to " + newPiece);
         }
     }
 
@@ -45,11 +47,13 @@ public class Pawn extends ChessPiece {
 
     @Override
     public String toString() {
-        return move();
+        return "Pawn: value " + super.getValue();
     }
 
     @Override
     public String move() {
         return "forward 1";
     }
+
+
 }

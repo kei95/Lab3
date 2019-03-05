@@ -8,7 +8,7 @@ public class Bishop extends ChessPiece{
 
     @Override
     public String toString() {
-        return move();
+        return "Bishop: value " + super.getValue();
     }
 
     @Override

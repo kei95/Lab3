@@ -9,7 +9,7 @@ public class Rook extends ChessPiece {
 
     @Override
     public String toString() {
-        return move();
+        return "Rook: value " + super.getValue();
     }
 
     @Override
